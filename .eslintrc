@@ -19,18 +19,36 @@
         "browser": true,
         "node": true,
         "jquery": true,
-        "jest": true
+        "jest": true,
+        "es6": true
     },
     "rules": {
         "prettier/prettier": [
-            "error",
+            "error"
+        ],
+        "linebreak-style": 0,
+        "comma-dangle": [
+            2,
+            "always-multiline"
+        ],
+        "no-unused-vars": [
+            1,
             {
-                "trailingComma": "es5"
+                "argsIgnorePattern": "res|next|^err"
             }
         ],
-        "linebreak-style": 0
+        "quotes": [
+            2,
+            "single",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
+        ]
     },
     "plugins": [
-        "prettier"
+        "prettier",
+        "react",
+        "jsx-a11y"
     ]
 }
